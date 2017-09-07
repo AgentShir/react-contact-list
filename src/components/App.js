@@ -6,6 +6,7 @@ import '../styles/App.css';
 import UserList from '../components/UserList';
 import Home from '../components/Home';
 import BaseLayout from '../components/BaseLayout';
+import User from '../components/User';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
               <Switch>
                 <Route path="/home" component={Home} />
                 <Route path="/userlist" component={UserList} />
+                <Route path="/user/:id" component={User} />
               </Switch>
             </BaseLayout>
           </BrowserRouter>
